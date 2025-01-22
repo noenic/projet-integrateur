@@ -13,11 +13,8 @@ APPS = ifnetshow ifshow neighborshow
 # Target par défaut
 .PHONY: all clean build $(APPS)
 
-# Cible par défaut (si aucune cible spécifique n'est donnée)
-all: tinycore
-
-# Build pour TinyCore
-tinycore:
+# Build pour toutes les applications
+all:
 	@mkdir -p $(OUTPUT_DIR)
 	$(MAKE) build
 
